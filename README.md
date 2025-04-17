@@ -20,6 +20,9 @@ FocusTube helps you:
 
 
 ## 📸 Screenshots
+![FocusTube Demo](assests/before.png)
+![FocusTube Demo](assests/after.png)
+
 
 
 
