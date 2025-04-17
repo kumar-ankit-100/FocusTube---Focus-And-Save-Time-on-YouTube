@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Focus",
+    "version": "1.0",
+    "description": "Blurs entertainment content on YouTube to reduce distractions",
+    "permissions": ["storage", "tabs", "activeTab"],
+    "host_permissions": ["*://*.youtube.com/*"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*.youtube.com/*"],
+        "js": ["content.js"],
+        "css": ["style.css"]
+      }
+    ],
+    "icons": {
+    "16": "icons16.png",
+    "48": "icons48.png"
+  }
+    
+}

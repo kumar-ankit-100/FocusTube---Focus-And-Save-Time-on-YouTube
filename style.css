@@ -1,0 +1,66 @@
+/* styles.css */
+
+/* Blur effect for non-educational content */
+.yt-focus-blurred {
+    filter: blur(10px);
+    transition: filter 0.3s ease;
+  }
+  
+  .yt-focus-blurred:hover {
+    filter: blur(5px);
+  }
+  
+  /* Focus mode overlay */
+  .yt-focus-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+  }
+  
+  .yt-focus-message {
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .yt-focus-show-btn {
+    display: block;
+    margin-top: 8px;
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  
+  .yt-focus-show-btn:hover {
+    background-color: #d32f2f;
+  }
+  
+  /* Status indicator in the corner */
+  .yt-focus-status {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(33, 150, 243, 0.9);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
